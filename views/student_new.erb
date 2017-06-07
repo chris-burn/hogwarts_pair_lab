@@ -1,0 +1,23 @@
+<h1>Enrol Your Young Wizard</h1>
+
+<form action="/students" method="POST">
+  
+<label for="first_name">First Name:</label>
+<input type="text" id="first_name" name="first_name">
+<label for="last_name">Last Name:</label>
+<input type="text" id="last_name" name="last_name">
+
+<label for="house-select">Pick Your House:</label>
+<select name="house_id" id="house-select">
+  <%= @houses.each do |house| %>
+  <option value=<%= house.id %>><%=house.name%></option>
+  <% end%> 
+</select>
+
+
+<label for="age">Age:</label>
+<input type="number" id="age" name="age">
+
+<input type="submit" value="ENROL ME!">
+
+</form>

@@ -1,0 +1,7 @@
+<h1>HOGWARTS HOUSES Y'ALL!</h1>
+
+<% @houses.each do |house| %>
+  <p>Name: <%= house.name%></p>
+  <p>Logo: <img src="<%=house.logo%>" alt="<%= house.name%>"></p>
+  <hr  />
+<% end %>
