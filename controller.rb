@@ -5,13 +5,17 @@ require ('pry-byebug')
 require_relative ('models/students')
 require_relative ('models/houses')
 
+get '/home' do
+  erb(:splash)
+end
+
 get '/students' do
   @students = Student.all
   erb(:student_index)
 end
 
 get '/student/new' do
-  @student = Student.all
+  @houses = House.all
   erb(:student_new)
 end
 
@@ -29,6 +33,11 @@ end
 get '/houses' do
   @houses = House.all
   erb(:house_index)
+end
+
+get '/house/:id' do
+  @houses = House.find(params[:id])
+  erb(:house_show)
 end
 
 

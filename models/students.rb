@@ -3,7 +3,7 @@ require "pry-byebug"
 
 class Student
 
-  attr_accessor :first_name, :last_name, :house_id, :age
+  attr_accessor :id, :first_name, :last_name, :house_id, :age
 
   def initialize(options)
     @id = options['id'].to_i() if options['id']

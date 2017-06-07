@@ -8,11 +8,11 @@
 <input type="text" id="last_name" name="last_name">
 
 <label for="house-select">Pick Your House:</label>
-<select name="house_id" id="house-select">
+<select name="house-select" id="house-select">
   <%= @houses.each do |house| %>
   <option value=<%= house.id %>><%=house.name%></option>
   <% end%> 
-</select>
+</select> 
 
 
 <label for="age">Age:</label>
