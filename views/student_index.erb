@@ -1,10 +1,11 @@
 <h1>HOGWARTS ALUMNI</h1>
 
 <% @students.each do |student| %>
-  <p>First Name: <%= student.first_name%></p>
-  <p>Last Name: <%= student.last_name%></p>
+  <p>First Name: <strong><%= student.first_name%></strong></p>
+  <p>Last Name: <strong><%= student.last_name%></strong></p>
   <p>House: <%= student.houses.name %> </p>
   <p>Age: <%= student.age%> </p>
+  <h4><a href="/student/<%=student.id%>">Student Info</a></h4>
   <hr  />
 <% end %>
 

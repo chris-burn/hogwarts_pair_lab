@@ -23,7 +23,7 @@ student2.save()
 
 house1 = House.new({
   'name' => "Gryffindor",
-  'logo' => "https://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=12976535"
+  'logo' => "http://vignette2.wikia.nocookie.net/hpinfo/images/1/1f/Gryffindorcrest.jpg/revision/latest?cb=20090811064709&path-prefix=de"
   })
 
 house2 = House.new({
